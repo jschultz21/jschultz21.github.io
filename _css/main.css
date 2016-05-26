@@ -10,6 +10,12 @@ color: inherit;
 
 }
 
+#ronswan img {
+	height: 300px;
+	width: 425px;
+	float: left;
+}
+
 p {
 
 	font-family: 'pathway gothic one', sans-serif;
@@ -18,8 +24,11 @@ p {
 	text-align: justify;
 }
 
-.aboutme {
-	padding: 0px 70px;
+.subpage {
+	width: 80%;
+	margin-right: auto;
+	margin-left:auto;
+	margin-top: 30px;
 }
 
 body {
@@ -55,9 +64,42 @@ input[type=button] {
 	display:flex;
 	width: 60%;
 	line-height:50px;
-	margin-left: -5px;
+	margin-left: -8px;
+	padding-left: 15px;
 
 }
+
+h1 {
+	position: relative;
+	font-weight: bold;
+	z-index: 2;
+	font-size: 110px;
+	/* text-shadow: black 0px 0px 0px; */
+  letter-spacing: 20px;
+}
+
+/* link stuff */
+
+a {
+   color: #296F87;
+	 display: inline-block;
+   text-decoration:none;
+	 transition:  0.3s ease-in-out;
+
+}
+
+a:visited {
+    color: #000000;
+}
+
+a:hover {
+    color: #b9c5c8 !important;
+}
+
+a:active {
+    color: #b9c5c8;
+}
+
 
 .nav li {
 	display: inline;
@@ -82,14 +124,7 @@ input[type=button] {
 	overflow: hidden;
 }
 
-h1 {
-	position: relative;
-	font-weight: bold;
-	z-index: 2;
-	font-size: 110px;
-	/* text-shadow: black 0px 0px 0px; */
-  letter-spacing: 20px;
-}
+
 
  #banner img {
  	position: absolute;
@@ -205,32 +240,7 @@ h2 {
 	font-size: 40px;
 }
 
-/* link stuff */
 
-a:link {
-   color: #296F87;
-	 display: inline-block;
-   text-decoration:none;
-}
-
-a:visited {
-    color: #000000;
-    text-decoration:none;
-}
-
-a:hover {
-    color: #b9c5c8;
-    text-decoration:none;
-}
-
-a:active {
-    color: #b9c5c8;
-    text-decoration:none;
-}
-
-a {
-    transition: color 0.25s ease-in-out;
-}
 
 
 
@@ -246,7 +256,7 @@ footer {
 	padding: 15px 0 5px 0;
 }
 
-footer h1 {
+footer p {
 	color: #4C4E4F;
 	font-size: 18px;
 	font-family: 'pathway gothic one', sans-serif;
@@ -257,6 +267,7 @@ footer h1 {
 
 footer img {
 	padding: 0 4px;
+	height: 35px;
 }
 
 
