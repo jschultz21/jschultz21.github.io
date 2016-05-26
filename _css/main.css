@@ -1,6 +1,7 @@
 *{
 padding:0;
 border:0;
+margin: 0;
 font-size: inherit;
 font-weight: inherit;
 font-family: inherit;
@@ -10,25 +11,12 @@ color: inherit;
 
 }
 
-#ronswan img {
-	height: 300px;
-	width: 425px;
-	float: left;
-}
-
 p {
 
 	font-family: 'pathway gothic one', sans-serif;
 	font-size: 30px;
 	color: #4C4E4F;
 	text-align: justify;
-}
-
-.subpage {
-	width: 80%;
-	margin-right: auto;
-	margin-left:auto;
-	margin-top: 30px;
 }
 
 body {
@@ -48,25 +36,30 @@ input[type=button] {
 	color: #4C4E4F;
 }
 
-/* button {
-	background-color: transparent;
-	border: 1px solid #4C4E4F;
-	font-family: 'oswald', sans-serif;
-	font-size: 20px;
-	color: #4C4E4F;
-} */
 
-.nav {
+#navdiv {
+	margin-top: 50px;
+	margin-bottom: 0;
+	width: 60%;
+
+}
+
+ul {
 	list-style-type: none;
-	text-align: cener;
+	text-align: center;
 	background-color: rgba(185, 197, 200, 0.4);
 	border-radius: 13px;
 	display:flex;
-	width: 60%;
 	line-height:50px;
 	margin-left: -8px;
-	padding-left: 15px;
 
+}
+
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
 }
 
 h1 {
@@ -76,6 +69,14 @@ h1 {
 	font-size: 110px;
 	/* text-shadow: black 0px 0px 0px; */
   letter-spacing: 20px;
+}
+
+h2 {
+	font-family: 'oswald', sans-serif;
+  color: #b9c5c8;
+	font-size: 30px;
+	line-height: 75px;
+
 }
 
 /* link stuff */
@@ -102,7 +103,7 @@ a:active {
 
 
 .nav li {
-	display: inline;
+	display: inline-block;
 	flex-grow:1;
 	padding-left: 10px;
 
@@ -118,10 +119,11 @@ a:active {
   background-color: transparent;
   color: #b9c5c8;
   text-align: center;
-	/*width: 100%;*/
 	padding: 30px 20px 50px 20px;
 	position: relative;
-	overflow: hidden;
+	overflow: hidden
+	width: 100%;
+	height: 200px;
 }
 
 
@@ -139,14 +141,20 @@ a:active {
  	}
 
 #blockone {
-	margin: 60px 60px 0px 60px;
-	padding: 0px;
+	margin: 70px 60px 0px 60px;
+	position: relative;
+	top:0;
+	height:auto;
+	min-height: 220px;
+
+
 }
 
 #face {
 	float: left;
 	margin: 0 auto;
-	padding: 0 40px 0 0;
+	padding: 0 40px 10px 0;
+
 }
 
 /* pretty sure this does nothing
@@ -170,9 +178,8 @@ a:active {
 
 #intro {
 	display:table;
-	padding: 0px 0 0 0;
+	padding: 20px 0 0 0;
 	margin: 0 auto;
-	/*max-height: 230px;*/
 	}
 
 
@@ -181,35 +188,19 @@ a:active {
   vertical-align: middle;
 }
 
-/*
-#intro h1 {
-	font-family: 'fjalla one', sans-serif;
-	font-weight: normal;
-	color: #1d2227;
-	text-align: center;
-}
-*/
+
 
 #blocktwo {
 	display: table;
-	margin: 50px 0;
 	width: 100%;
-	min-height: 220px;
-}
-
-h2 {
-	font-family: 'oswald', sans-serif;
-  color: #b9c5c8;
-	font-size: 30px;
-
+	margin: 50px 0px;
 }
 
 
 #contactinfo {
 	width: auto;
 	float:left;
-	padding: 0px 20px;
-	margin:0 20px 0 0;
+	padding: 30px 50px 0 20px;
 
 }
 #contactinfo p {
@@ -223,12 +214,10 @@ h2 {
 }
 
 #kimpossible {
-	padding: 0 20px 0 0px;
+	width: 50%;
+	padding: 0 20px 20px 0px;
 	border-right: 5px solid #b9c5c8;
 	float: left;
-	margin: 0 0 0px 0;
-	width: 50%;
-
 }
 
 #kimpossible h1 {
@@ -241,7 +230,29 @@ h2 {
 }
 
 
+#ronswan img {
+	height: 300px;
+	width: 425px;
+}
 
+#ronswan {
+	float:left;
+	width: 50%;
+	background-color: red;
+}
+
+#explanations {
+	padding: 100px;
+	width: auto;
+}
+
+.subpage {
+	width: 80%;
+	margin-right: auto;
+	margin-left:auto;
+	margin-top: 30px;
+	background: green;
+}
 
 
 /* footer and JS twitter button */
@@ -253,7 +264,7 @@ footer {
 	clear: left;
 	margin: 0 0 20px 0;
 	text-align: center;
-	padding: 15px 0 5px 0;
+	padding: 10px 0;
 }
 
 footer p {
@@ -271,7 +282,24 @@ footer img {
 }
 
 
-@media screen and (max-width: 945px) {
+/***** JS attempts *****/
+
+#javamagic {
+	margin: 40px;
+}
+
+#javamagic p {
+	text-align: center;
+}
+
+#feed {
+	margin: 0 auto;
+	width: 50%;
+}
+
+/***** responsive stuff *****/
+
+@media screen and (max-width: 945px)
   #banner h1 {
     font-size: 85px;
     letter-spacing: 10px;
@@ -285,14 +313,21 @@ footer img {
   }
 
   #blocktwo {
-  	margin: 30px 0;
+  	margin: 30px 0 60px 0;
   }
 }
 
-/***** responsive stuff *****/
-
 @media screen and (max-width: 670px) {
-  #banner h1 {
+
+	#banner {
+		height:150px;
+	}
+
+	#navdiv {
+		width: 90%;
+	}
+
+	#banner h1 {
     margin: 0 auto;
     font-size: 70px;
     letter-spacing: 5px;
@@ -317,20 +352,7 @@ footer img {
   }
 }
 
-/***** JS attempts *****/
-
-#javaDiv {
-	width: 100%;
-
-}
-
-#feed {
-	margin: 0 auto;
-	width: 50%;
-}
-
-#javamagic p {
-	margin: 0px 0 20px 0;
-	text-align: center;
-
+@media screen and (max-width: 670px) {
+	#kimpossible {
+	width: auto;
 }
