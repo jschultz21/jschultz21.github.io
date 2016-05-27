@@ -233,16 +233,17 @@ a:active {
 #ronswan img {
 	height: 300px;
 	width: 425px;
+	border-radius: 7%;
+	border: 5px solid white;
 }
 
 #ronswan {
 	float:left;
-	width: 50%;
-	background-color: red;
+	text-align: center;
+	width: 60%;
 }
 
 #explanations {
-	padding: 100px;
 	width: auto;
 }
 
@@ -251,7 +252,6 @@ a:active {
 	margin-right: auto;
 	margin-left:auto;
 	margin-top: 30px;
-	background: green;
 }
 
 
