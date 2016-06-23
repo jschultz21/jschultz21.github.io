@@ -1,124 +1,25 @@
 *{
-padding:0;
-border:0;
-margin: 0;
-font-size: inherit;
-font-weight: inherit;
-font-family: inherit;
-text-decoration: inherit;
-line-height: inherit;
-color: inherit;
-
-}
-
-p {
-
-	font-family: 'pathway gothic one', sans-serif;
-	font-size: 30px;
-	color: #4C4E4F;
-	text-align: justify;
+	padding:0;
+	border:0;
+	margin: 0;
+	font-size: inherit;
+	font-weight: inherit;
+	font-family: inherit;
+	text-decoration: inherit;
+	line-height: inherit;
+	color: inherit;
+	list-style-type: none;
 }
 
 body {
 	background-image: url("../_img/new_year_background.png");
-	padding: 0;
-	margin: 0;
 	font-family: 'oswald', sans-serif;
-}
-
-input[type=button] {
-
-	background-color: transparent;
-	border: 1px solid #4C4E4F;
-	border-radius: 5px;
-	font-family: 'oswald', sans-serif;
-	font-size: 20px;
-	color: #4C4E4F;
-}
-
-
-#navdiv {
-	margin-top: 50px;
-	margin-bottom: 0;
-	width: 60%;
-
-}
-
-ul {
-	list-style-type: none;
-	text-align: center;
-	background-color: rgba(185, 197, 200, 0.4);
-	border-radius: 13px;
-	display:flex;
-	line-height:50px;
-	margin-left: -8px;
-
-}
-
-.navbar-fixed {
-    top: 0;
-    z-index: 100;
-    position: fixed;
-    width: 100%;
-}
-
-h1 {
-	position: relative;
-	font-weight: bold;
-	z-index: 2;
-	font-size: 110px;
-	/* text-shadow: black 0px 0px 0px; */
-  letter-spacing: 20px;
-}
-
-h2 {
-	font-family: 'oswald', sans-serif;
-  color: #b9c5c8;
-	font-size: 30px;
-	line-height: 75px;
-
-}
-
-/* link stuff */
-
-a {
-   color: #296F87;
-	 display: inline-block;
-   text-decoration:none;
-	 transition:  0.3s ease-in-out;
-
-}
-
-a:visited {
-    color: #000000;
-}
-
-a:hover {
-    color: #b9c5c8 !important;
-}
-
-a:active {
-    color: #b9c5c8;
-}
-
-
-.nav li {
-	display: inline-block;
-	flex-grow:1;
-	padding-left: 10px;
-
-}
-
-.nav li a {
-	color: #b2b2b2;
-	font-size: 20px;
 }
 
 #banner {
-  font-family: 'oswald', sans-serif;
-  background-color: transparent;
-  color: #b9c5c8;
-  text-align: center;
+	background-color: transparent;
+	color: #b9c5c8;
+	text-align: center;
 	padding: 30px 20px 50px 20px;
 	position: relative;
 	overflow: hidden;
@@ -126,19 +27,112 @@ a:active {
 	height: 200px;
 }
 
-
-
- #banner img {
- 	position: absolute;
-    left: 0;
-    top: 0;
+#banner img {
+	position: absolute;
+	left: 0;
+	top: 0;
 	width: 100%;
 	height: 100%;
 	opacity: 0.5;
 	display: block;
-  object-fit: cover;
+	object-fit: cover;
+}
 
- 	}
+p {
+	font-family: 'pathway gothic one', sans-serif;
+	font-size: 30px;
+	color: #4C4E4F;
+	text-align: justify;
+}
+h1 {
+	position: relative;
+	font-weight: bold;
+	/*z-index: 2;*/
+	font-size: 120px;
+	letter-spacing: 20px;
+	font-family: 'oswald', sans-serif;
+}
+
+h2 {
+	font-family: 'oswald', sans-serif;
+	letter-spacing: 9px;
+	color: #b9c5c8;
+	line-height: 38px;
+	text-align: right;
+	font-size: 40px;
+}
+
+h3 {
+	font-family: 'oswald', sans-serif;
+	color: #b9c5c8;
+	font-size: 30px;
+	line-height: 75px;
+}
+
+input[type=button] {
+	background-color: transparent;
+	border: 1px solid #4C4E4F;
+	border-radius: 9px;
+	font-family: 'oswald', sans-serif;
+	font-size: 20px;
+	color: #4C4E4F;
+	padding: 5px;
+}
+
+
+#navdiv {
+	margin-top: 50px;
+	margin-bottom: 0;
+	width: 60%;
+}
+
+ul {
+	text-align: center;
+	background-color: rgba(185, 197, 200, 0.4);
+	border-radius: 13px;
+	display:flex;
+	line-height:50px;
+	margin-left: -8px;
+}
+
+.navbar-fixed {
+	top: 0;
+	z-index: 100;
+	position: fixed;
+	width: 100%;
+}
+
+.nav li {
+	display: inline-block;
+	flex-grow:1;
+	padding-left: 10px;
+}
+
+.nav li a {
+	color: #b2b2b2;
+	font-size: 20px;
+}
+
+/* link stuff */
+
+a {
+	color: #296F87;
+	display: inline-block;
+	text-decoration:none;
+	transition:  0.3s ease-in-out;
+}
+
+a:visited {
+	color: #000000;
+}
+
+a:hover {
+	color: #b9c5c8 !important;
+}
+
+a:active {
+	color: #b9c5c8;
+}
 
 #blockone {
 	margin: 70px 60px 0px 60px;
@@ -146,8 +140,6 @@ a:active {
 	top:0;
 	height:auto;
 	min-height: 220px;
-
-
 }
 
 #face {
@@ -160,7 +152,7 @@ a:active {
 /* pretty sure this does nothing
 #face span {
 
-	margin: 0px 0px;
+margin: 0px 0px;
 } */
 
 #face img {
@@ -169,10 +161,10 @@ a:active {
 }
 
 .image_off, #home:hover .image_on{
-   display:none
+	display:none
 }
 .image_on, #home:hover .image_off{
-   display:block
+	display:block
 }
 
 
@@ -180,12 +172,12 @@ a:active {
 	display:table;
 	padding: 20px 0 0 0;
 	margin: 0 auto;
-	}
+}
 
 
 #intro {
-  display: table-cell;
-  vertical-align: middle;
+	display: table-cell;
+	vertical-align: middle;
 }
 
 
@@ -220,30 +212,23 @@ a:active {
 	float: left;
 }
 
-#kimpossible h1 {
-	font-family: 'oswald', sans-serif;
-	letter-spacing: 9px;
-   	color: #b9c5c8;
-   	line-height: 38px;
-   	text-align: right;
-	font-size: 40px;
-}
 
 
-#ronswan img {
+
+.mywork img {
 	height: 300px;
 	width: 425px;
 	border-radius: 7%;
 	border: 5px solid white;
 }
 
-#ronswan {
+.mywork {
 	float:left;
 	text-align: center;
 	width: 60%;
 }
 
-#explanations {
+.descriptions {
 	width: auto;
 }
 
@@ -260,8 +245,8 @@ a:active {
 footer {
 	width: 100%;
 	background-color: rgba(185, 197, 200, 0.4);
-	float: left;
-	clear: left;
+	/*float: left;
+	clear: left;*/
 	margin: 0 0 20px 0;
 	text-align: center;
 	padding: 10px 0;
@@ -270,7 +255,6 @@ footer {
 footer p {
 	color: #4C4E4F;
 	font-size: 18px;
-	font-family: 'pathway gothic one', sans-serif;
 	text-align: center;
 	line-height: 15px;
 	letter-spacing: 1.5px;
@@ -300,21 +284,21 @@ footer img {
 /***** responsive stuff *****/
 
 @media screen and (max-width: 945px) {
-  #banner h1 {
-    font-size: 85px;
-    letter-spacing: 10px;
-  }
-  #kimpossible h1, #kimpossible h1 {
-  	font-size: 32px;
-  }
+	#banner h1 {
+		font-size: 85px;
+		letter-spacing: 10px;
+	}
+	#kimpossible h1, #kimpossible h1 {
+		font-size: 32px;
+	}
 
-  #contactinfo p {
-  	font-size: 27px;
-  }
+	#contactinfo p {
+		font-size: 27px;
+	}
 
-  #blocktwo {
-  	margin: 30px 0 60px 0;
-  }
+	#blocktwo {
+		margin: 30px 0 60px 0;
+	}
 }
 
 @media screen and (max-width: 670px) {
@@ -328,33 +312,33 @@ footer img {
 	}
 
 	#banner h1 {
-    margin: 0 auto;
-    font-size: 70px;
-    letter-spacing: 5px;
-  }
+		margin: 0 auto;
+		font-size: 70px;
+		letter-spacing: 5px;
+	}
 
-  #kimpossible h1 {
-  	font-size: 22px;
-  	letter-spacing:2px;
-  }
+	#kimpossible h1 {
+		font-size: 22px;
+		letter-spacing:2px;
+	}
 
-  #contactinfo p {
-  	font-size: 22px;
-  	letter-spacing: 0px;
-  	}
+	#contactinfo p {
+		font-size: 22px;
+		letter-spacing: 0px;
+	}
 
-  #intro p {
-  	font-size: 22px;
-  }
+	#intro p {
+		font-size: 22px;
+	}
 
-  #blocktwo {
-  	margin: 15px;
-  }
+	#blocktwo {
+		margin: 15px;
+	}
 }
 
 @media screen and (max-width: 670px) {
 
 	#kimpossible {
-	width: auto;
+		width: auto;
 	}
 }
