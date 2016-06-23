@@ -11,11 +11,15 @@
 	list-style-type: none;
 }
 
+.hidden{
+	display:none
+}
+
 body {
 	background-image: url("../img/new_year_background.png");
 	font-family: 'oswald', sans-serif;
-	 position:relative;
-	 /*float:left; */
+	position:relative;
+	/*float:left; */
 }
 
 #banner {
@@ -82,16 +86,16 @@ input[type=button] {
 }
 
 .stuck{
-    position:fixed;
-    z-index:100;
-    /*width:100%;*/
-    top:0;
+	position:fixed;
+	z-index:100;
+	/*width:100%;*/
+	top:0;
 }
 
 /*.nav{
-	margin-top: 50px;
-	margin-bottom: 0;
-	width: 60%;
+margin-top: 50px;
+margin-bottom: 0;
+width: 60%;
 }*/
 
 
@@ -119,6 +123,7 @@ ul {
 .nav li a {
 	color: #b2b2b2;
 	font-size: 20px;
+	cursor: pointer;
 }
 
 /* link stuff */
@@ -142,7 +147,7 @@ a:active {
 	color: #b9c5c8;
 }
 
-#blockone {
+#blockOne {
 	margin: 70px 60px 0px 60px;
 	position: relative;
 	top:0;
@@ -220,7 +225,7 @@ margin: 0px 0px;
 	padding: 10px;
 }
 
-.mywork img {
+#mywork img {
 	height: 350px;
 	/*width: 425px;*/
 	border-radius: 7%;
@@ -248,7 +253,7 @@ footer {
 	clear: left;*/
 	margin: 0 0 20px 0;
 	text-align: center;
-	padding: 10px 0;
+	padding: 15px 0;
 }
 
 footer p {
@@ -260,7 +265,7 @@ footer p {
 }
 
 footer img {
-	padding: 0 4px;
+	padding: 10px;
 	height: 35px;
 }
 
