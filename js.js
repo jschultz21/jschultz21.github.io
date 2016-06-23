@@ -1,16 +1,7 @@
-
-$(document).ready(function() {
-
-  $(window).scroll(function () {
-      //if you hard code, then use consolew
-      //.log to determine when you want the
-      //nav bar to stick.
-      console.log($(window).scrollTop())
-    if ($(window).scrollTop() > 280) {
-      $('#nav_bar').addClass('navbar-fixed');
-    }
-    if ($(window).scrollTop() < 281) {
-      $('#nav_bar').removeClass('navbar-fixed');
-    }
-  });
-});
+$(window).scroll(function() {
+				if ($(window).scrollTop() > 315) {
+					$('.nav').addClass('stuck');
+				} else {
+					$('.nav').removeClass('stuck');
+				}
+			});
