@@ -15,11 +15,11 @@ $('#work').on('click', function(){
   // $('.subpage').toggleClass('hidden')
   $('#mywork').removeClass('hidden')
   $('#aboutMe').addClass('hidden')
-  $('#blockOne').addClass('hidden')
+  $('#home').addClass('hidden')
 })
 
 $('#about').on('click', function(){
   $('#aboutMe').removeClass('hidden')
   $('#mywork').addClass('hidden')
-  $('#blockOne').addClass('hidden')
+  $('#home').addClass('hidden')
 })

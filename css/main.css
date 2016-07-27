@@ -22,7 +22,7 @@ body {
 	/*float:left; */
 }
 
-#banner {
+.banner {
 	background-color: transparent;
 	color: #b9c5c8;
 	text-align: center;
@@ -33,7 +33,7 @@ body {
 	height: 200px;
 }
 
-#banner img {
+.banner img {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -50,17 +50,18 @@ p {
 	color: #4C4E4F;
 	text-align: justify;
 }
+
+h1, h2 {
+	font-family: 'oswald', sans-serif;
+}
 h1 {
 	position: relative;
 	font-weight: bold;
-	/*z-index: 2;*/
 	font-size: 120px;
 	letter-spacing: 20px;
-	font-family: 'oswald', sans-serif;
 }
 
 h2 {
-	font-family: 'oswald', sans-serif;
 	letter-spacing: 9px;
 	color: #b9c5c8;
 	line-height: 38px;
@@ -69,13 +70,12 @@ h2 {
 }
 
 h3 {
-	font-family: 'oswald', sans-serif;
 	color: #b9c5c8;
 	font-size: 30px;
 	line-height: 75px;
 }
 
-input[type=button] {
+button {
 	background-color: transparent;
 	border: 1px solid #4C4E4F;
 	border-radius: 9px;
@@ -99,7 +99,7 @@ width: 60%;
 }*/
 
 
-#navdiv {
+nav {
 	margin-top: 50px;
 	margin-bottom: 0;
 	width: 60%;
@@ -147,7 +147,7 @@ a:active {
 	color: #b9c5c8;
 }
 
-#blockOne {
+#home {
 	margin: 70px 60px 0px 60px;
 	position: relative;
 	top:0;
@@ -179,17 +179,6 @@ margin: 0px 0px;
 }
 
 
-#intro {
-	display:table;
-	padding: 20px 0 0 0;
-	margin: 0 auto;
-}
-
-
-#intro {
-	display: table-cell;
-	vertical-align: middle;
-}
 
 #blocktwo {
 	display: table;
@@ -232,10 +221,10 @@ margin: 0px 0px;
 	/*border: 5px solid white;*/
 }
 
-.descriptions {
+/*.description {
 	margin: 65px;
 	width: 500px;
-}
+}*/
 
 .subpage {
 	width: 80%;
@@ -288,7 +277,7 @@ footer img {
 /***** responsive stuff *****/
 
 /*@media screen and (max-width: 945px) {
-#banner h1 {
+.banner h1 {
 font-size: 85px;
 letter-spacing: 10px;
 }
@@ -307,15 +296,15 @@ margin: 30px 0 60px 0;
 
 @media screen and (max-width: 670px) {
 
-#banner {
+.banner {
 height:150px;
 }
 
-#navdiv {
+nav {
 width: 90%;
 }
 
-#banner h1 {
+.banner h1 {
 margin: 0 auto;
 font-size: 70px;
 letter-spacing: 5px;
@@ -331,9 +320,6 @@ font-size: 22px;
 letter-spacing: 0px;
 }
 
-#intro p {
-font-size: 22px;
-}
 
 #blocktwo {
 margin: 15px;
