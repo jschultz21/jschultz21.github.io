@@ -19,10 +19,9 @@ body {
 	background-image: url("../img/new_year_background.png");
 	font-family: 'oswald', sans-serif;
 	position:relative;
-	/*float:left; */
 }
 
-.banner {
+#banner {
 	background-color: transparent;
 	color: #b9c5c8;
 	text-align: center;
@@ -33,7 +32,7 @@ body {
 	height: 200px;
 }
 
-.banner img {
+#banner img {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -51,8 +50,9 @@ p {
 	text-align: justify;
 }
 
-h1, h2 {
+h1, h2, h3 {
 	font-family: 'oswald', sans-serif;
+	color: #b9c5c8;
 }
 h1 {
 	position: relative;
@@ -63,14 +63,12 @@ h1 {
 
 h2 {
 	letter-spacing: 9px;
-	color: #b9c5c8;
 	line-height: 38px;
 	text-align: right;
 	font-size: 40px;
 }
 
 h3 {
-	color: #b9c5c8;
 	font-size: 30px;
 	line-height: 75px;
 }
@@ -79,7 +77,6 @@ button {
 	background-color: transparent;
 	border: 1px solid #4C4E4F;
 	border-radius: 9px;
-	font-family: 'oswald', sans-serif;
 	font-size: 20px;
 	color: #4C4E4F;
 	padding: 5px;
@@ -88,50 +85,39 @@ button {
 .stuck{
 	position:fixed;
 	z-index:100;
-	/*width:100%;*/
 	top:0;
+	width: 100%;
+	background-color: #b9c5c8;
+	font-color: darkgrey;
+
 }
 
-/*.nav{
-margin-top: 50px;
-margin-bottom: 0;
-width: 60%;
-}*/
-
-
-nav {
-	margin-top: 50px;
-	margin-bottom: 0;
-	width: 60%;
-}
 
 ul {
 	text-align: center;
 	background-color: rgba(185, 197, 200, 0.4);
-	border-radius: 13px;
 	display:flex;
 	line-height:50px;
-	margin-left: -8px;
+	font-size: 20px;
 }
 
 .nav li {
 	display: inline-block;
 	flex-grow:1;
-	padding-left: 10px;
 }
 
 .nav li a {
 	color: #b2b2b2;
-	font-size: 20px;
 	cursor: pointer;
 }
+
+
 
 /* link stuff */
 
 a {
 	color: #296F87;
 	display: inline-block;
-	text-decoration:none;
 	transition:  0.3s ease-in-out;
 }
 
@@ -147,25 +133,12 @@ a:active {
 	color: #b9c5c8;
 }
 
-#home {
-	margin: 70px 60px 0px 60px;
-	position: relative;
-	top:0;
-	height:auto;
-	min-height: 220px;
-}
-
 #face {
 	float: left;
 	margin: 0 auto;
 	padding: 0 40px 10px 0;
 }
 
-/* pretty sure this does nothing
-#face span {
-
-margin: 0px 0px;
-} */
 
 #face img {
 	max-height: 200px;
@@ -179,8 +152,19 @@ margin: 0px 0px;
 }
 
 
+#intro {
+	display:table;
+	padding: 20px 0 0 0;
+	margin: 0 auto;
+}
 
-#blocktwo {
+
+#intro {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#contact {
 	display: table;
 	width: 100%;
 	margin: 50px 0px;
@@ -193,7 +177,6 @@ margin: 0px 0px;
 }
 
 #contactinfo p {
-	font-family: 'pathway gothic one', sans-serif;
 	font-size: 35px;
 	letter-spacing: 1px;
 	font-weight:bold;
@@ -213,18 +196,19 @@ margin: 0px 0px;
 	display: flex;
 	padding: 10px;
 }
+.repoLink {
+	text-align: right;
+	color: #b9c5c8;
+}
 
 #mywork img {
 	height: 350px;
-	/*width: 425px;*/
 	border-radius: 7%;
-	/*border: 5px solid white;*/
 }
 
-/*.description {
+.descriptions {
 	margin: 65px;
-	width: 500px;
-}*/
+}
 
 .subpage {
 	width: 80%;
@@ -238,12 +222,12 @@ margin: 0px 0px;
 footer {
 	width: 100%;
 	background-color: rgba(185, 197, 200, 0.4);
-	/*float: left;
-	clear: left;*/
 	margin: 0 0 20px 0;
 	text-align: center;
 	padding: 15px 0;
 }
+
+
 
 footer p {
 	color: #4C4E4F;
@@ -256,7 +240,14 @@ footer p {
 footer img {
 	padding: 10px;
 	height: 35px;
+	transition:  0.3s ease-in-out;
+
 }
+/*
+footer img:hover {
+opacity: .5;
+
+}*/
 
 
 /***** JS attempts *****/
@@ -277,7 +268,7 @@ footer img {
 /***** responsive stuff *****/
 
 /*@media screen and (max-width: 945px) {
-.banner h1 {
+#banner h1 {
 font-size: 85px;
 letter-spacing: 10px;
 }
@@ -289,22 +280,22 @@ font-size: 32px;
 font-size: 27px;
 }
 
-#blocktwo {
+#contact {
 margin: 30px 0 60px 0;
 }
 }
 
 @media screen and (max-width: 670px) {
 
-.banner {
+#banner {
 height:150px;
 }
 
-nav {
+#navdiv {
 width: 90%;
 }
 
-.banner h1 {
+#banner h1 {
 margin: 0 auto;
 font-size: 70px;
 letter-spacing: 5px;
@@ -320,8 +311,11 @@ font-size: 22px;
 letter-spacing: 0px;
 }
 
+#intro p {
+font-size: 22px;
+}
 
-#blocktwo {
+#contact {
 margin: 15px;
 }
 }
