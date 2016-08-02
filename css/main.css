@@ -23,21 +23,20 @@ strong{
 body {
 	background-image: url("../img/new_year_background.png");
 	font-family: 'oswald', sans-serif;
-	position:relative;
+width:100%;
 }
 
-#banner {
+.banner {
 	background-color: transparent;
 	color: #b9c5c8;
 	text-align: center;
 	padding: 30px 20px 50px 20px;
 	position: relative;
-	overflow: hidden;
-	width: 100%;
 	height: 200px;
+	overflow: hidden;
 }
 
-#banner img {
+.banner img {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -59,6 +58,7 @@ h1, h2, h3 {
 	font-family: 'oswald', sans-serif;
 	color: #b9c5c8;
 }
+
 h1 {
 	position: relative;
 	font-weight: bold;
@@ -94,7 +94,6 @@ button {
 	width: 100%;
 	background-color: #b9c5c8;
 	font-color: darkgrey;
-
 }
 
 
@@ -178,7 +177,7 @@ a:active {
 #contactinfo {
 	width: auto;
 	float:left;
-	padding: 30px 50px 0 20px;
+	padding: 10px 50px 0 20px;
 }
 
 #contactinfo p {
@@ -199,26 +198,29 @@ a:active {
 
 .workexample {
 	display: flex;
-	padding: 10px;
+	/*padding: 10px;*/
 }
-.repoLink {
-	text-align: right;
-	color: #b9c5c8;
-}
+
 
 #mywork img {
 	height: 350px;
-	border-radius: 7%;
 }
 
+#feministgenerator img{
+	box-shadow: 5px 5px 8px #888888;
+	height: 313px;
+	margin: 20px;
+}
+
+
 .descriptions {
-	margin: 65px;
+	margin: 30px 0 30px 30px;
 }
 
 .subpage {
 	width: 80%;
 	margin: 0 auto;
-	margin-top: 30px;*/
+	margin-top: 30px;
 }
 
 
@@ -254,80 +256,8 @@ opacity: .5;
 
 }
 
-
-/***** JS attempts *****/
-
-#javamagic {
-	margin: 40px;
+.descriptions a {
+	text-align: right;
+	color: lightsalmon;
+	color: #b9c5c8;
 }
-
-#javamagic p {
-	text-align: center;
-}
-
-#feed {
-	margin: 0 auto;
-	width: 50%;
-}
-
-/***** responsive stuff *****/
-
-/*@media screen and (max-width: 945px) {
-#banner h1 {
-font-size: 85px;
-letter-spacing: 10px;
-}
-#kimpossible h1, #kimpossible h1 {
-font-size: 32px;
-}
-
-#contactinfo p {
-font-size: 27px;
-}
-
-#contact {
-margin: 30px 0 60px 0;
-}
-}
-
-@media screen and (max-width: 670px) {
-
-#banner {
-height:150px;
-}
-
-#navdiv {
-width: 90%;
-}
-
-#banner h1 {
-margin: 0 auto;
-font-size: 70px;
-letter-spacing: 5px;
-}
-
-#kimpossible h1 {
-font-size: 22px;
-letter-spacing:2px;
-}
-
-#contactinfo p {
-font-size: 22px;
-letter-spacing: 0px;
-}
-
-#intro p {
-font-size: 22px;
-}
-
-#contact {
-margin: 15px;
-}
-}
-
-@media screen and (max-width: 670px) {
-
-#kimpossible {
-width: auto;
-}
-}*/
