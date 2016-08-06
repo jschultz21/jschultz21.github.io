@@ -23,7 +23,7 @@ strong{
 body {
 	background-image: url("../img/new_year_background.png");
 	font-family: 'oswald', sans-serif;
-width:100%;
+	width:100%;
 }
 
 .banner {
@@ -87,13 +87,17 @@ button {
 	padding: 5px;
 }
 
+.scroll {
+	padding: 53px;
+}
+
 .stuck{
 	position:fixed;
-	z-index:100;
+	z-index:1000;
 	top:0;
 	width: 100%;
-	background-color: #b9c5c8;
 	font-color: darkgrey;
+	background-image: url("../img/new_year_background.png");
 }
 
 
@@ -137,47 +141,41 @@ a:active {
 	color: #b9c5c8;
 }
 
+#intro {
+	display:flex;
+	flex-direction: row;
+	align-items:center;
+}
+
 #face {
-	float: left;
-	margin: 0 auto;
-	padding: 0 40px 10px 0;
+padding-right: 20px;
 }
 
 
 #face img {
-	max-height: 200px;
+	height: 200px;
 }
 
-.image_off, .home:hover .image_on{
-	display:none
-}
-.image_on, .home:hover .image_off{
-	display:block
+.image_on {
+  position:absolute;
+  transition: opacity .4s ease-in-out;
 }
 
-
-#intro {
-	display:table;
-	padding: 20px 0 0 0;
-	margin: 0 auto;
+.image_on:hover {
+  opacity:0;
 }
 
 
-#intro {
-	display: table-cell;
-	vertical-align: middle;
-}
-
-#contact {
-	display: table;
-	width: 100%;
+.contact {
+	display: flex;
+	flex-direction: row;
+	align-items:center;
+	justify-content: center;
 	margin: 50px 0px;
 }
 
 #contactinfo {
-	width: auto;
-	float:left;
-	padding: 10px 50px 0 20px;
+	padding-left:15px;
 }
 
 #contactinfo p {
@@ -189,16 +187,16 @@ a:active {
 }
 
 #kimpossible {
-	width: 50%;
-	padding: 0 20px 20px 0px;
 	border-right: 5px solid #b9c5c8;
-	float: left;
 }
 
 
 .workexample {
 	display: flex;
-	/*padding: 10px;*/
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	align-content:space-between;
 }
 
 
@@ -206,6 +204,7 @@ a:active {
 	height: 350px;
 }
 
+/*because Apple changed the way its screenshots look :( */
 #feministgenerator img{
 	box-shadow: 5px 5px 8px #888888;
 	height: 313px;
@@ -214,7 +213,7 @@ a:active {
 
 
 .descriptions {
-	margin: 30px 0 30px 30px;
+	margin-left: 15px;
 }
 
 .subpage {
@@ -240,7 +239,6 @@ footer p {
 	color: #4C4E4F;
 	font-size: 18px;
 	text-align: center;
-	line-height: 15px;
 	letter-spacing: 1.5px;
 }
 
@@ -252,12 +250,45 @@ footer img {
 }
 
 footer img:hover {
-opacity: .5;
+	opacity: .5;
 
 }
 
-.descriptions a {
-	text-align: right;
-	color: lightsalmon;
-	color: #b9c5c8;
+@media screen and (max-width: 480px){
+	.workexample {
+		flex-direction: column;
+		align-content: center;
+	}
+
+
+}
+
+@media screen and (max-width: 1010px){
+	h1 {
+		font-size:75px;
+	}
+	.workexample {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.descriptions {
+		margin-bottom: 25px;
+	}
+
+	h2 {
+		/*letter-spacing: 9px;
+		line-height: 28px;
+		font-size: 30px;*/
+	}
+
+	h3{
+		text-align:center;
+	}
+
+	p{
+		font-size: 25px;
+	}
+
 }

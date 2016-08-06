@@ -4,10 +4,13 @@ $('#aboutMe').addClass('hidden')
 
 
 $(window).scroll(function() {
-  if ($(window).scrollTop() > 283) {
+  if ($(window).scrollTop() > 282) {
     $('.nav').addClass('stuck');
+    $('.subpage').addClass('scroll')
   } else {
     $('.nav').removeClass('stuck');
+    $('.subpage').removeClass('scroll')
+
   }
 });
 
