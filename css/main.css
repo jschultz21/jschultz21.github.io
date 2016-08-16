@@ -205,7 +205,7 @@ padding-right: 20px;
 }
 
 /*because Apple changed the way its screenshots look :( */
-#feministgenerator img{
+#feministgenerator img, #gigmappr img{
 	box-shadow: 5px 5px 8px #888888;
 	height: 313px;
 	margin: 20px;

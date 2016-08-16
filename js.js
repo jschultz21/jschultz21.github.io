@@ -32,3 +32,6 @@ $('#home').on('click', function(){
   $('#mywork').addClass('hidden')
   $('#aboutMe').addClass('hidden')
 })
+
+
+$('.subpage a').attr('target', '_blank').attr('title','This link will open in a new window.');
