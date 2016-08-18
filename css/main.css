@@ -87,6 +87,7 @@ h2 {
 	text-align:center;
 	color: #889696;
 	opacity:.8;
+	line-height: 70px;
 
 }
 
@@ -238,7 +239,7 @@ padding-right: 20px;
 
 
 .descriptions {
-	margin-left: 15px;
+	margin-left: 20px;
 }
 
 .subpage {
